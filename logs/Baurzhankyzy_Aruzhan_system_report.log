@@ -12,3 +12,26 @@ Disk Usage:
 Filesystem      Size  Used Avail Use% Mounted on
 /dev/sdd       1007G  1.6G  955G   1% /
 ======================================
+==========================================
+       SYSTEM MONITORING REPORT           
+==========================================
+Student Name: Baurzhankyzy Aruzhan
+Date & Time:  2026-10-29 16:16:08
+Username:     aruzhan
+OS & Kernel:  Linux 6.18.54.1-microsoft-standard-WSL2 #1 SMP PREEMPT_DYNAMIC Tue Oct  6 19:13:07 UTC 2026
+------------------------------------------
+CPU & Memory Information:
+------------------------------------------
+CPU(s):                                  4
+Model name:                              Intel(R) Core(TM) i3-7020U CPU @ 2.30GHz
+NUMA node0 CPU(s):                       0-3
+
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       1.4Gi        72Mi        63Mi       2.5Gi       2.4Gi
+Swap:          1.0Gi       1.6Mi       1.0Gi
+------------------------------------------
+Disk Usage & Available Space:
+------------------------------------------
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/sdd       1007G  1.6G  955G   1% /
+==========================================

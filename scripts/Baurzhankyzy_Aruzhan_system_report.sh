@@ -1,15 +1,23 @@
 LOG_FILE="logs/Baurzhankyzy_Aruzhan_system_report.log"
-{
-    echo "======================================"
-    echo "Student Name: Aruzhan Baurzhankyzy"
-    echo "Date & Time: $(date)"
-    echo "Username: $(whoami)"
-    echo "OS Kernel: $(uname -s -r)"
-    echo "CPU Info: $(lscpu | grep 'Model name' | cut -d: -f2 | xargs 2>/dev/null || uname -m)"
-    echo "Memory Info:"
+mkdir -p logs
+generate_report() {
+    echo "=========================================="
+    echo "       SYSTEM MONITORING REPORT           "
+    echo "=========================================="
+    echo "Student Name: Baurzhankyzy Aruzhan"
+    echo "Date & Time:  $(date '+%Y-%m-%d %H:%M:%S')"
+    echo "Username:     $(whoami)"
+    echo "OS & Kernel:  $(uname -s -r -v)"
+    echo "------------------------------------------"
+    echo "CPU & Memory Information:"
+    echo "------------------------------------------"
+    lscpu | grep "Model name\|CPU(s):" || uname -p
+    echo ""
     free -h
-    echo "Disk Usage:"
+    echo "------------------------------------------"
+    echo "Disk Usage & Available Space:"
+    echo "------------------------------------------"
     df -h /
-    echo "======================================"
-} >> "$LOG_FILE"
-echo "Report appended to $LOG_FILE"
+    echo "=========================================="
+}
+generate_report | tee -a "$LOG_FILE"
