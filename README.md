@@ -1,3 +1,4 @@
 # Student API - Baurzhankyzy Aruzhan
 Updated CRUD functionality
 Documentation conflict resolved manually.
+## CRUD Operations - Baurzhankyzy Aruzhan
