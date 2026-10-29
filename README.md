@@ -1,1 +1,2 @@
-# Main Branch Version - Baurzhankyzy Aruzhan
+Updated CRUD functionality
+Documentation conflict resolved manually.
